@@ -1,1 +1,1 @@
-const testClass = require("./lib/Manager");
+const testClass = require("../lib/Manager");

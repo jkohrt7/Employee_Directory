@@ -1,1 +1,1 @@
-const testClass = require("./lib/Engineer");
+const testClass = require("../lib/Engineer");
