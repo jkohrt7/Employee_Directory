@@ -6,7 +6,9 @@ const Engineer = require("./lib/Engineer");
 
 //External Packages
 const fs = require('fs');
+const path = require('path');
 const inquirer = require("inquirer");
+const buildHTML = require("./lib/buildHTML");
 
 async function init() {
     let employeeList = [];
@@ -37,13 +39,15 @@ async function init() {
         moreEmployees = await prompts.addMorePrompt();
         moreEmployees = moreEmployees["addAnother"]
     }
-    console.log(employeeList);
-    return employeeList;
+    //Before building HTML, overwrite existing output.
+    fs.writeFileSync(path.resolve("./dist/index.html"),"") //remove existing output
+    buildHTML(employeeList);
 }
 
-async function initTest() {
-    let moreEmployees = await prompts.addMorePrompt();
-    console.log(moreEmployees)
+function initTest() {
+    console.log(process.cwd())
+    fs.copyFileSync(path.resolve("./src/index_source.html"), path.resolve("./dist/index.html"))
 }
 
 init();
+//initTest();
