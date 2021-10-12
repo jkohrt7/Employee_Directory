@@ -27,14 +27,14 @@ html {
 }
 
 body {
-    flex: flex;
+    display: flex;
     flex-direction: column;
-    height: inherit;
+    min-height: 100%;
     margin: 0;
 }
 
 main {
-    flex-grow: 1 0 auto;
+    flex: 1;
     background-image: linear-gradient(var(--lblue) 60%,var(--white));
     height: 100%;
 }
