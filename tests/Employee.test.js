@@ -1,4 +1,4 @@
-const { expect } = require("@jest/globals");
+
 const Employee = require("../lib/Employee");
 
 test('Should return all properties separated by commas', () => {
