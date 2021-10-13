@@ -26,6 +26,8 @@ You can then run the program with ```npm start```.
 - When you are finished adding employees, select 'No' when prompted with 'Would you like to add another employee?'. An index.html file will then be generated and placed in the ~/dist folder of the project, along with a placeholder stylesheet. An example of the output is shown below:
 ![alt text here](./src/sshot.jpg)
 
+You can also watch a video demonstration [here](https://youtu.be/fLIJ2ojP8tc);
+
 ## Questions
 If you have any questions about using or contibuting to the project, you can contact me via email or though github:
 - Email: jkohrt7@gmail.com
