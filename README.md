@@ -9,6 +9,7 @@ generates an index.html page displaying all of the entered info.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
+- [Questions](#questions)
 - [License](#license)
 
 ## Installation
